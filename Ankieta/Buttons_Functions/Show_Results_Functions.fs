@@ -9,7 +9,8 @@ open System.Windows.Media
 
 
 let get_Employee_Score_Sum (employee_Scores_List : Employee_Scores list) = 
-    employee_Scores_List |> List.map(fun score -> score.Score) |> List.reduce (fun acc score -> acc + score) 
+    employee_Scores_List |> List.map(fun score -> score.Score) 
+    |> List.reduce (fun acc score -> acc + score) 
 
 
 let get_Employee_Median (employee_Scores: Employee_Scores list) =
