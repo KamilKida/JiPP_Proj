@@ -131,7 +131,7 @@ let create_Answare_Panel (stack_Panel : StackPanel) (window : Window) =
     
     let score_Info_Label = new Label()
     score_Info_Label.Content <- "Skala ocen: 0 - 10
-    0: Barzo źle
+    0: Bardzo źle
     10: Idealnie"
 
     score_Info_Label.Background <- Brushes.White

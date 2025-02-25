@@ -99,7 +99,7 @@ let show_Results (stack_Panel : StackPanel) (respondent_Id : int) (window : Wind
             let current_Responent_Choice =  get_Current_Respondent_Choice employee.Scores respondent_Id
 
             employee_Result_Panel.Height <- window.Height / 3.5
-            employee_Info_Label.Content <- sprintf "Oceń prace pracownika: %s %s || Dział: %s
+            employee_Info_Label.Content <- sprintf "Pracownik: %s %s || Dział: %s
 
             Suma wszystkich ocen: %d
             Średnia ocen: %.2f
@@ -108,7 +108,7 @@ let show_Results (stack_Panel : StackPanel) (respondent_Id : int) (window : Wind
 
             Twój wybór: %d" employee.Employee.Name employee.Employee.Surname employee.Employee.Departament employee_Sum_Of_Score employee_Scores_Avreage employee_Score_Median employee_Most_Popular_Score current_Responent_Choice
         else
-            employee_Info_Label.Content <- sprintf "Oceń prace pracownika: %s %s || Dział: %s
+            employee_Info_Label.Content <- sprintf "Pracownik: %s %s || Dział: %s
 
             Suma wszystkich ocen: %d
             Średnia ocen: %.2f
